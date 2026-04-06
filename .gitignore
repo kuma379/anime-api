@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.local
+.replit
+.replit-artifact/
+pnpm-lock.yaml
+*.tsbuildinfo
+attached_assets/
