@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "buildCommand": "cd artifacts/anime-web && npm install --legacy-peer-deps && npx vite build --config vite.config.vercel.ts",
+  "buildCommand": "cd artifacts/anime-web && npm install --legacy-peer-deps && ./node_modules/.bin/vite build --config vite.config.vercel.ts",
   "outputDirectory": "artifacts/anime-web/dist/public",
-  "installCommand": "npm install",
   "functions": {
     "api/index.ts": {
-      "runtime": "nodejs20.x"
+      "maxDuration": 30
     }
   },
   "rewrites": [
