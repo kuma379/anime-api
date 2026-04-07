@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const BASE = "https://anime-prscezlyt-dariwin81-5963s-projects.vercel.app/api";
+const BASE = import.meta.env.PROD
+  ? "/api"
+  : "https://anime-prscezlyt-dariwin81-5963s-projects.vercel.app/api";
 
 const api = axios.create({ baseURL: BASE, timeout: 15000 });
 
